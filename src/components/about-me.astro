@@ -1,0 +1,30 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="👋 Hola!, Soy Bianca Dueñas " id="sobre-mi">
+  <Fragment slot="eyebrow" >
+    <h2 class="text-6xl uppercase ">
+      Un poco sobre mí
+    </h2>
+    <div class="flex gap-x-2 gap-y-6 flex-wrap justify-center">
+      <div class="flex flex-col items-center gap-2 max-w-xl">
+        <div class="text-[#3A4F66]">
+           <p class="text-sm font-jakarta font-normal mb-6">Me llamo <span class="font-bold">Bianca Dueñas Gomez</span>, soy peruana y tengo 25 años. Cursé la carrera de Ingenieria de Sistemas en la Universidad Católica de Santa María en Arequipa, en el camino de mi carrera conocí sobre el mundo del UX y así poco a poco crecío el gusto y la pasíon por <span class="font-bold">crear buenas experiencias para los usuarios.</span>
+           <p class="text-sm font-jakarta font-normal mb-6">Tuve la oportunidad de colaborar en un proyecto en mi antiguo puesto laboral proponiendo mejoras para el ERP, las cuales fueron implementadas, donde me enfoque en mi usuario final. Es por ello que en <span class="font-bold">Abril del 2022</span>, comencé un bootcamp de UX/UI Design, para poder enfocarme a fondo sobre este mundo, pude adaptar mis conocimientos previos como también desarrollar nuevas habilidades de investigación, análisis y creación.</span>
+           <p class="text-sm font-jakarta font-normal mb-6">Mi meta es poder <span class="font-bold">crecer, aprender y desarrollarme</span> en este grandioso mundo tecnológico.</p>
+        </div>
+         <a
+                      href="../src/assets/curriculum.pdf"
+                      class="font-medium font-p before:content-[''] before:w-full before:absolute before:h-full before:-z-10 before:top-[7px] before:left-2 before:bg-secondary relative rounded border border-black bg-primary px-6 py-3 leading-4 text-sm transition hover:text-white focus:outline-none focus:ring"
+          >
+                      Descargar Curriculum
+                    
+          </a>
+        </div>
+        <div class="px-14 md:px-2"><img class="sm:max-w-sm h-full object-contain" src="../src/assets/foto-bianca.jpg" alt=""></div>
+      </div>
+    
+  </Fragment>
+</ContentSection>

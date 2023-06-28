@@ -5,7 +5,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["InterVariable", ...defaultTheme.fontFamily.sans],
+        sans: ["ClashGrotesk-Regular", ...defaultTheme.fontFamily.sans],
+        'p':["ClashGrotesk-Medium"],
+        'title':["ClashGrotesk-Bold"],
+        'display': ["ClashGrotesk-Semibold"],
+        'jakarta':["Plus Jakarta Sans"]
       },
       colors: {
         primary: "var(--color-primary)",
