@@ -1,0 +1,30 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="👋 Hola!, Soy Bianca Dueñas " id="sobre-mi">
+  <Fragment slot="eyebrow" >
+    <h2 class="text-6xl uppercase ">
+      A little about me
+    </h2>
+    <div class="flex gap-x-2 gap-y-6 flex-wrap justify-center">
+      <div class="flex flex-col items-center gap-2 max-w-xl">
+        <div class="text-[#3A4F66]">
+           <p class="text-sm font-jakarta font-normal mb-6">My name is <span class="font-bold">Bianca Dueñas Gomez</span>, I am Peruvian and I am 25 years old. I studied Systems Engineering at the Catholic University of Santa Maria in Arequipa, in the way of my career I learned about the world of UX and so little by little I grew the taste and passion for <span class="font-bold">creating good experiences for users.</span>
+           <p class="text-sm font-jakarta font-normal mb-6">I had the opportunity to collaborate in a project in my old job proposing improvements for the ERP, which were implemented, where I focused on my end user. That's why in <span class="font-bold">April 2022</span>, I started a UX/UI Design bootcamp, in order to focus on this world, I could adapt my previous knowledge as well as develop new research, analysis and creation skills.</span>
+           <p class="text-sm font-jakarta font-normal mb-6">My goal is to <span class="font-bold">grow, learn and develop</span> in this great technological world.</p>
+        </div>
+         <a
+                      href="../src/assets/curriculum.pdf"
+                      class="font-medium font-p before:content-[''] before:w-full before:absolute before:h-full before:-z-10 before:top-[7px] before:left-2 before:bg-secondary relative rounded border border-black bg-primary px-6 py-3 leading-4 text-sm transition hover:text-white focus:outline-none focus:ring"
+          >
+                      Download Curriculum
+                    
+          </a>
+        </div>
+        <div class="px-14 md:px-2"><img class="sm:max-w-sm h-full object-contain" src="../src/assets/foto-bianca.jpg" alt=""></div>
+      </div>
+    
+  </Fragment>
+</ContentSection>

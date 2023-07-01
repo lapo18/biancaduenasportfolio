@@ -2,12 +2,12 @@
 import "@fontsource/inter/variable.css";
 import Compatibility from "~/components/compatibility.astro";
 import Features from "~/components/features.astro";
-import Footer from "~/components/footer.astro";
+import Footer from "~/components/footer-en.astro";
 import Header from "~/components/header.astro";
-import Intro from "~/components/intro.astro";
+import Intro from "~/components/intro-en.astro";
 import Showcase from "~/components/showcase.astro";
 import Splash from "~/components/splash.astro";
-import AboutMe from "~/components/about-me.astro"
+import AboutMe from "~/components/about-me-en.astro"
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
@@ -17,18 +17,18 @@ const description =
 ---
 
 <!DOCTYPE html>
-<html lang="es" class="h-full motion-safe:scroll-smooth" data-theme="dark">
+<html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/logo-manchaBD.svg" type="image/svg+xml" />
     <meta name="generator" content={generator} />
 
-    <title>Astro Landing Page</title>
+    <title>Bianc Dueñas Gomez</title>
     <meta name="description" content={description} />
 
     <!-- social media -->
-    <meta property="og:title" content="Astro" />
+    <meta property="og:title" content="Bianca Dueñas" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={image} />
@@ -60,25 +60,6 @@ const description =
               : "light";
           }
         });
-
-        if (!localStorage.getItem('language')) {
-  // Perform language detection logic
-  const detectedLanguage = navigator.language || navigator.userLanguage;
-
-  // Perform the redirection
-  switch (detectedLanguage) {
-    case 'es':
-      window.location.href = '/';
-      break;
-    // Default case for English or any other language
-    default:
-      window.location.href = '/en';
-      break;
-  }
-
-  // Set the language cookie to prevent subsequent redirections
-  localStorage.setItem('language', detectedLanguage);
-}
     </script>
   </head>
   <body

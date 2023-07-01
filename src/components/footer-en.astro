@@ -1,0 +1,38 @@
+---
+import { Icon } from "astro-icon";
+import HeroImage from "~/components/hero-image.astro";
+import type { FooterLink } from "~/types";
+
+const links: Array<FooterLink> = [
+  {
+    url: "https://medium.com/@biancaandrea.29",
+    description: "Bianca Duenas Medium",
+    icon: "fa-brands:medium",
+  },
+  {
+    url: "https://www.linkedin.com/in/bianca-duenas-gomez/",
+    description: "Link to Bianca Duenas linkedin",
+    icon: "fa-brands:linkedin",
+  }
+];
+---
+
+<footer class="flex flex-col h-64 px-8 items-center max-w-5xl">
+  <h2 class="font-bold font-title text-xl p-3">¿CONNECT?</h2>
+  <p class="text-center text-sm mb-6 font-normal font-jakarta">Please contact me with any questions or just to say hello. 😊 </p>
+  <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-2">
+    {
+      links.map((link) => (
+        <li>
+          <a
+            class="flex h-16 w-16 items-center justify-center p-2"
+            href={link.url}
+          >
+            <span class="sr-only">{link.description}</span>
+            <Icon class="h-full" name={link.icon} />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</footer>
